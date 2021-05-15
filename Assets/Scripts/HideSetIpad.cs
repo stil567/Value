@@ -5,12 +5,19 @@ using UnityEngine;
 public class HideSetIpad : MonoBehaviour
 {
     public GameObject ipad;
-    public void HideIpad()
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Tab))
+            SetIpad();
+    }
+
+    private void HideIpad()
+    {
+        ipad.SetActive(false);
+    }
+    private void SetIpad()
     {
         ipad.SetActive(true);
-    }
-    public void SetIpad()
-    {
-
     }
 }

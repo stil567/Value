@@ -4,17 +4,27 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-
-    public GameObject GM;
-    public int Rotationoffset = 10;
+    public int Rotationoffset = 10;//скорость поворота
     public float rotz;
 
     private Vector3 mousePosition;
 
-
     void Update()
     {
+        
+    }
 
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (Input.GetMouseButton(0))
+                ValveRotaton();
+        }
+    }
+
+    private void ValveRotaton()
+    {
         mousePosition = Input.mousePosition;
 
         // разница между текущим положением и положением мыши
@@ -23,7 +33,6 @@ public class Rotation : MonoBehaviour
         //  угол поворота
         rotz = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         // Применяем поворот вокруг оси y
-        GM.transform.rotation  = Quaternion.Euler(0f, rotz * Rotationoffset, 0f);
+        transform.rotation = Quaternion.Euler(0f, rotz * Rotationoffset, 0f);
     }
-
- }
+}

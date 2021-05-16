@@ -537,6 +537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f801b8500cc73e540b95a2f8fa5dbc68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fluid: {fileID: 7642792019034985089}
   Rotationoffset: 10
   rotz: 0
 --- !u!135 &642583346
@@ -684,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f801b8500cc73e540b95a2f8fa5dbc68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fluid: {fileID: 7642792019034985089}
   Rotationoffset: 10
   rotz: 0
 --- !u!54 &1371998132
@@ -1149,7 +1151,7 @@ PrefabInstance:
     - target: {fileID: 2009127894113087849, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8941542
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2009127894113087849, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
@@ -1159,7 +1161,7 @@ PrefabInstance:
     - target: {fileID: 2009127894113087849, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.44775915
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2009127894113087849, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
@@ -1174,7 +1176,7 @@ PrefabInstance:
     - target: {fileID: 2009127894113087849, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -53.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2009127894113087849, guid: 36df760a3580fd841b480d4d9aa2c0ed,
         type: 3}

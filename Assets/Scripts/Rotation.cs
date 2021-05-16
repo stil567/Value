@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    public GameObject Fluid;
+    public GameObject fluid;
+    public GameObject flow;
     public int Rotationoffset = 10;//скорость поворота
     public float rotz;
 
@@ -17,7 +18,12 @@ public class Rotation : MonoBehaviour
         if (transform.rotation.y > 0)
         {
             heightFluid += 0.0001f;
-            Fluid.transform.localScale = new Vector3(1f, heightFluid, 1f);
+            fluid.transform.localScale = new Vector3(1f, heightFluid, 1f);
+            flow.SetActive(true);
+        }
+        else
+        {
+            flow.SetActive(false);
         }
     }
 
